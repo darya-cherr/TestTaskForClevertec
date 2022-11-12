@@ -1,5 +1,7 @@
 package Traffic;
 
+import java.util.ArrayList;
+
 public abstract class Traffic {
 
     int manufactureYear;
@@ -7,6 +9,8 @@ public abstract class Traffic {
     String model;
     String fuelType;
     double fuelConsumption;
+
+    ArrayList<Order> orders;
 
     public Traffic(){}
 

@@ -3,6 +3,8 @@ package Traffic;
 public class Truck extends Traffic {
     int bodyVolume;
     int loadCapacity;
+    BodyType bodyType;
+
 
     public Truck(int bodyVolume, int loadCapacity){
         this.bodyVolume = bodyVolume;

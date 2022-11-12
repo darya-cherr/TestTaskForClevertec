@@ -1,16 +1,8 @@
 package Traffic;
 
 public enum BodyType {
+    REFRIGERATOR,
+    TENT,
+    CISTERN,
     CARGO_PASSENGER_BODY;
-    enum refrigerator
-    {
-        MANUFACTURED_GOODS,
-        PERISHABLE_PRODUCE
-    }
-    enum tent{
-        MANUFACTURED_GOODS
-    }
-    enum cistern{
-        liquid
-    }
 }
