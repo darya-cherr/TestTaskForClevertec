@@ -20,14 +20,15 @@ public abstract class Traffic {
         this.manufactureYear = manufactureYear;
         this.fuelType = fuelType;
         this.fuelConsumption = fuelConsumption;
+        orders = new ArrayList<>();
     }
 
     public void refuelTraffic(){
-
+        System.out.println("Traffic is refueled!");
     }
 
     public void repairTraffic(){
-
+        System.out.println("Traffic is repaired!");
     }
 
     public int getManufactureYear() {
@@ -49,4 +50,10 @@ public abstract class Traffic {
     public double getFuelConsumption() {
         return fuelConsumption;
     }
+
+    public ArrayList<Order> getOrders(){
+        return orders;
+    }
+
+
 }

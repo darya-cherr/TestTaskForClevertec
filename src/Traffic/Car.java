@@ -12,7 +12,7 @@ public class Car extends Traffic {
     }
 
     public void disinfectCarInterior(){
-
+        System.out.println("Car interior is disinfected!");
     }
 
 }
