@@ -55,5 +55,10 @@ public abstract class Traffic {
         return orders;
     }
 
+    public void addOrder(Order order){
+        orders.add(order);
+    }
+
+
 
 }

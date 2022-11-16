@@ -13,10 +13,10 @@ public class TrafficFactory {
 
     public Traffic createTraffic(TrafficType trafficType) {
         Traffic traffic = switch (trafficType) {
-            case CAR -> new Car("model", "brand", 2001, "бензин", 23.5, 5);
-            case TRUCK -> new Truck("model", "brand", 2012, "дизель", 19.9, 124, 45, TENT);
+            case CAR -> new Car("modelCar", "brand", 2001, "gasoline", 23.5, 5);
+            case TRUCK -> new Truck("modelTruck", "brand", 2012, "diesel", 19.9, 124, 45, TENT);
             case CARGO_PASSENGER_TRAFFIC ->
-                    new CargoPassengerTraffic("model", "brand", 2004, "бензин", 16.8, 12, 23, 4);
+                    new CargoPassengerTraffic("modelCPT", "brand", 2004, "gasoline", 16.8, 12, 23, 4);
             default -> throw new IllegalArgumentException("Wrong traffic type:" + trafficType);
         };
 

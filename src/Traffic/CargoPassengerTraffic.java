@@ -1,6 +1,6 @@
 package Traffic;
 
-public class CargoPassengerTraffic extends Traffic{
+public class CargoPassengerTraffic extends Traffic implements CarInterface, TruckInterface{
     Car car;
     Truck truck;
 
@@ -11,7 +11,33 @@ public class CargoPassengerTraffic extends Traffic{
     }
 
 
+    @Override
+    public void disinfectCarInterior() {
+        car.disinfectCarInterior();
+    }
 
+    @Override
+    public int getFreePassengerCapacity() {
+        return car.getFreePassengerCapacity();
+    }
 
+    @Override
+    public void sealTruckBody() {
+        truck.sealTruckBody();
+    }
 
+    @Override
+    public BodyType getBodyType() {
+       return truck.getBodyType();
+    }
+
+    @Override
+    public int getFreeBodyVolume() {
+        return truck.getFreeBodyVolume();
+    }
+
+    @Override
+    public int getFreeLoadCapacity() {
+        return truck.getFreeLoadCapacity();
+    }
 }

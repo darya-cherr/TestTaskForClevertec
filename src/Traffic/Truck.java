@@ -1,6 +1,6 @@
 package Traffic;
 
-public class Truck extends Traffic {
+public class Truck extends Traffic implements TruckInterface{
     int bodyVolume;
     int loadCapacity;
     BodyType bodyType;
@@ -21,7 +21,7 @@ public class Truck extends Traffic {
     }
 
     public void sealTruckBody(){
-
+        System.out.println("Truck body is sealed!");
     }
 
     public BodyType getBodyType() {
